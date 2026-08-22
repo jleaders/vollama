@@ -4,7 +4,7 @@
 set -euo pipefail
 
 VOLLAMA_VERSION="${VOLLAMA_VERSION:-latest}"
-DOWNLOAD_BASE="https://github.com/leadersandco/vollama/releases"
+DOWNLOAD_BASE="https://github.com/jleaders/vollama/releases"
 
 status() { echo ">>> $*"; }
 error()  { echo "ERROR: $*" >&2; exit 1; }
