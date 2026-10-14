@@ -36,8 +36,9 @@ vollama provides a familiar, Ollama-style workflow (`run`, `list`, `ps`, `stop`)
 |---|---|---|---|
 | Linux (NVIDIA) | Yes | Yes | nvidia-smi |
 | macOS (Apple Silicon) | No | Yes (Metal) | — |
+| Windows (x64) | No | Yes | nvidia-smi |
 
-On macOS, use llama.cpp recipes with Metal acceleration. vLLM requires CUDA and is Linux-only. Other engines have their own platform requirements, which `vollama doctor` reports per engine.
+On macOS, use llama.cpp recipes with Metal acceleration. On Windows, use llama.cpp recipes with CUDA acceleration (or CPU). vLLM requires CUDA on Linux. Other engines have their own platform requirements, which `vollama doctor` reports per engine.
 
 ## Usage
 
