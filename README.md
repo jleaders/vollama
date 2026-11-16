@@ -8,12 +8,12 @@
   An Ollama-style CLI and OpenAI-compatible API that wraps multiple inference engines behind a single interface.
 </p>
 
-vollama provides a familiar, Ollama-style workflow (`run`, `list`, `ps`, `stop`) on top of a pluggable set of LLM inference engines. Each model is defined by a declarative recipe that specifies which engine serves it — vLLM, llama.cpp, SGLang, TensorRT-LLM, OpenVINO GenAI, Unsloth Studio, or ACE-Step — so a single interface can manage heterogeneous inference workloads without locking you into any one backend.
+vollama provides a familiar, Ollama-style workflow (`run`, `list`, `ps`, `stop`) on top of a pluggable set of LLM inference engines. Each model is defined by a declarative recipe that specifies which engine serves it — vLLM, llama.cpp, SGLang, TensorRT-LLM, OpenVINO GenAI, or Unsloth Studio — so a single interface can manage heterogeneous inference workloads without locking you into any one backend.
 
 ## Features
 
 - **Ollama-compatible CLI** — `run`, `list`, `ps`, `stop`, `show`, `pull`, `add`, `cp`, `rm`
-- **Multiple inference engines** — vLLM, llama.cpp, SGLang, TensorRT-LLM, OpenVINO GenAI, Unsloth Studio, and ACE-Step, selectable per model
+- **Multiple inference engines** — vLLM, llama.cpp, SGLang, TensorRT-LLM, OpenVINO GenAI, and Unsloth Studio, selectable per model
 - **OpenAI-compatible API** — drop-in `/v1/chat/completions` endpoint with SSE streaming
 - **Recipe system** — model configurations are declarative TOML files, easy to version and share
 - **GPU-aware** — auto-detects NVIDIA GPUs, estimates VRAM requirements, shows compatibility
